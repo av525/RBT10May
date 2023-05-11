@@ -1,0 +1,520 @@
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 ~
+$ git version
+git version 2.37.0.windows.1
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Renuka
+user.email=renuka_kulkarni@persistent.com
+core.editor=Notepad
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 ~
+$ git config --global user.name "Renuka"
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 ~
+$ git config --global user.email "renuka_kulkarni@persistent.com"
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 ~
+$ git config --global core.editor "Notepad"
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 ~
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Renuka
+user.email=renuka_kulkarni@persistent.com
+core.editor=Notepad
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 ~
+$ cd d:
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d
+$ cd RBTs/RBT10May23/
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23
+$ git init
+Initialized empty Git repository in D:/RBTs/RBT10May23/.git/
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        File1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git add File1.txt
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File1.txt
+
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git commit -m "WI1:File Created with welcome msg."
+[master (root-commit) 494198f] WI1:File Created with welcome msg.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 File1.txt
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git commit -am "WI1: File1 modified with hello world msg."
+[master 41d1097] WI1: File1 modified with hello world msg.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log
+commit 41d109704adf4611edc763bb45aa3677432b6a7f (HEAD -> master)
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:23:31 2023 +0530
+
+    WI1: File1 modified with hello world msg.
+
+commit 494198f624b82210eccba97bcc68e3bde9a98279
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:04:20 2023 +0530
+
+    WI1:File Created with welcome msg.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git add .
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   File1.txt
+
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git commit -m "WI1: File1 modified to add the session timings."
+[master f8c673b] WI1: File1 modified to add the session timings.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log
+commit f8c673be1f6bbf7992923b8b3ba25e1d28b1c147 (HEAD -> master)
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:32:16 2023 +0530
+
+    WI1: File1 modified to add the session timings.
+
+commit 41d109704adf4611edc763bb45aa3677432b6a7f
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:23:31 2023 +0530
+
+    WI1: File1 modified with hello world msg.
+
+commit 494198f624b82210eccba97bcc68e3bde9a98279
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:04:20 2023 +0530
+
+    WI1:File Created with welcome msg.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        A.class
+        B.jar
+        UnitTest.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        UnitTest.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git add .
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git commit -m "Config: gitIgnore file added."
+[master 58b13b7] Config: gitIgnore file added.
+ 1 file changed, 3 insertions(+)
+ create mode 100644 .gitignore
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        C.exe
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git commit -am ".gitIgnore file updated."
+[master 7cbde0e] .gitIgnore file updated.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log
+commit 7cbde0ebd8a31fde0a2c621f299fcbd2964033d9 (HEAD -> master)
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:53:29 2023 +0530
+
+    .gitIgnore file updated.
+
+commit 58b13b7be1e7e8b1a4a1d57a71e6879132fa856a
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:39:49 2023 +0530
+
+    Config: gitIgnore file added.
+
+commit f8c673be1f6bbf7992923b8b3ba25e1d28b1c147
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:32:16 2023 +0530
+
+    WI1: File1 modified to add the session timings.
+
+commit 41d109704adf4611edc763bb45aa3677432b6a7f
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:23:31 2023 +0530
+
+    WI1: File1 modified with hello world msg.
+:...skipping...
+commit 7cbde0ebd8a31fde0a2c621f299fcbd2964033d9 (HEAD -> master)
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:53:29 2023 +0530
+
+    .gitIgnore file updated.
+
+commit 58b13b7be1e7e8b1a4a1d57a71e6879132fa856a
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:39:49 2023 +0530
+
+    Config: gitIgnore file added.
+
+commit f8c673be1f6bbf7992923b8b3ba25e1d28b1c147
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:32:16 2023 +0530
+
+    WI1: File1 modified to add the session timings.
+
+commit 41d109704adf4611edc763bb45aa3677432b6a7f
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:23:31 2023 +0530
+
+    WI1: File1 modified with hello world msg.
+
+commit 494198f624b82210eccba97bcc68e3bde9a98279
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:04:20 2023 +0530
+
+    WI1:File Created with welcome msg.
+~
+~
+q
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log -2
+commit 7cbde0ebd8a31fde0a2c621f299fcbd2964033d9 (HEAD -> master)
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:53:29 2023 +0530
+
+    .gitIgnore file updated.
+
+commit 58b13b7be1e7e8b1a4a1d57a71e6879132fa856a
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:39:49 2023 +0530
+
+    Config: gitIgnore file added.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log -3
+commit 7cbde0ebd8a31fde0a2c621f299fcbd2964033d9 (HEAD -> master)
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:53:29 2023 +0530
+
+    .gitIgnore file updated.
+
+commit 58b13b7be1e7e8b1a4a1d57a71e6879132fa856a
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:39:49 2023 +0530
+
+    Config: gitIgnore file added.
+
+commit f8c673be1f6bbf7992923b8b3ba25e1d28b1c147
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:32:16 2023 +0530
+
+    WI1: File1 modified to add the session timings.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --oneline
+7cbde0e (HEAD -> master) .gitIgnore file updated.
+58b13b7 Config: gitIgnore file added.
+f8c673b WI1: File1 modified to add the session timings.
+41d1097 WI1: File1 modified with hello world msg.
+494198f WI1:File Created with welcome msg.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --oneline -2
+7cbde0e (HEAD -> master) .gitIgnore file updated.
+58b13b7 Config: gitIgnore file added.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --author="Renuka"
+commit 7cbde0ebd8a31fde0a2c621f299fcbd2964033d9 (HEAD -> master)
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:53:29 2023 +0530
+
+    .gitIgnore file updated.
+
+commit 58b13b7be1e7e8b1a4a1d57a71e6879132fa856a
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:39:49 2023 +0530
+
+    Config: gitIgnore file added.
+
+commit f8c673be1f6bbf7992923b8b3ba25e1d28b1c147
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:32:16 2023 +0530
+
+    WI1: File1 modified to add the session timings.
+
+commit 41d109704adf4611edc763bb45aa3677432b6a7f
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:23:31 2023 +0530
+
+    WI1: File1 modified with hello world msg.
+
+commit 494198f624b82210eccba97bcc68e3bde9a98279
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:04:20 2023 +0530
+
+    WI1:File Created with welcome msg.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --author="Renuka" --oneline
+7cbde0e (HEAD -> master) .gitIgnore file updated.
+58b13b7 Config: gitIgnore file added.
+f8c673b WI1: File1 modified to add the session timings.
+41d1097 WI1: File1 modified with hello world msg.
+494198f WI1:File Created with welcome msg.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --since="05/10/2023"
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --since="05/09/2023"
+commit 7cbde0ebd8a31fde0a2c621f299fcbd2964033d9 (HEAD -> master)
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:53:29 2023 +0530
+
+    .gitIgnore file updated.
+
+commit 58b13b7be1e7e8b1a4a1d57a71e6879132fa856a
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:39:49 2023 +0530
+
+    Config: gitIgnore file added.
+
+commit f8c673be1f6bbf7992923b8b3ba25e1d28b1c147
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:32:16 2023 +0530
+
+    WI1: File1 modified to add the session timings.
+
+commit 41d109704adf4611edc763bb45aa3677432b6a7f
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:23:31 2023 +0530
+
+    WI1: File1 modified with hello world msg.
+
+commit 494198f624b82210eccba97bcc68e3bde9a98279
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:04:20 2023 +0530
+
+    WI1:File Created with welcome msg.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --since="05/10/2023"
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --until="05/10/2023"
+commit 7cbde0ebd8a31fde0a2c621f299fcbd2964033d9 (HEAD -> master)
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:53:29 2023 +0530
+
+    .gitIgnore file updated.
+
+commit 58b13b7be1e7e8b1a4a1d57a71e6879132fa856a
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:39:49 2023 +0530
+
+    Config: gitIgnore file added.
+
+commit f8c673be1f6bbf7992923b8b3ba25e1d28b1c147
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:32:16 2023 +0530
+
+    WI1: File1 modified to add the session timings.
+
+commit 41d109704adf4611edc763bb45aa3677432b6a7f
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:23:31 2023 +0530
+
+    WI1: File1 modified with hello world msg.
+
+commit 494198f624b82210eccba97bcc68e3bde9a98279
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:04:20 2023 +0530
+
+    WI1:File Created with welcome msg.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --grep="session"
+commit f8c673be1f6bbf7992923b8b3ba25e1d28b1c147
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:32:16 2023 +0530
+
+    WI1: File1 modified to add the session timings.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --grep="hello"
+commit 41d109704adf4611edc763bb45aa3677432b6a7f
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:23:31 2023 +0530
+
+    WI1: File1 modified with hello world msg.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --grep="msg"
+commit 41d109704adf4611edc763bb45aa3677432b6a7f
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:23:31 2023 +0530
+
+    WI1: File1 modified with hello world msg.
+
+commit 494198f624b82210eccba97bcc68e3bde9a98279
+Author: Renuka <renuka_kulkarni@persistent.com>
+Date:   Wed May 10 12:04:20 2023 +0530
+
+    WI1:File Created with welcome msg.
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$ git log --help
+
+renuka_kulkarni@PSL-6KHCDN3 MINGW64 /d/RBTs/RBT10May23 (master)
+$
