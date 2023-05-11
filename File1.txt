@@ -4,7 +4,7 @@ Session timing 10:30 Am - 1:30Pm
 Today is Day 2 of session
 Demo for undo committed changes!
 Demo for undo committed changes line2!
-<<<<<<< HEAD
 Function Bug123(){
 //do something here.
+//do something more to fix bug456
 }
