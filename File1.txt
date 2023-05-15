@@ -6,8 +6,9 @@ Demo - for undo committed changes!
 Demo - for undo committed changes line2!
 Function Bug123(){
 //do something here.
-//do something more to fix bug456
+//do something more to fix bug456.....
 }
 Line added to fix CR@
 File edited to verify Stash.
-Work Completed.
+Work Completed.....
+Working locally on main branch....
